@@ -14,6 +14,8 @@ jobs:
       uses: actions/setup-dotnet@v4
       with:
         dotnet-version: 8.0.x
+    - name: Move to project folder
+      run : cd MySpecFlowProject
     - name: Build & Install
       run: dotnet build
     - name: Ensure browsers are installed
